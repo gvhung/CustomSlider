@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customControls="clr-namespace:CustomControls"
+             mc:Ignorable="d"
+             BackgroundColor="#131415"
+             x:Class="CustomSlider.MainPage">
+    <StackLayout Margin="32,0"
+                 VerticalOptions="Center">
+        <customControls:CustomSlider HeightRequest="68">
+            <customControls:CustomSlider.TrackBar>
+                <Frame CornerRadius="34"
+                       HasShadow="false"
+                       BackgroundColor="#28292a"
+                       Padding="0">
+                </Frame>
+            </customControls:CustomSlider.TrackBar>
+
+            <customControls:CustomSlider.Thumb>
+                <Frame CornerRadius="30"
+                       HasShadow="false"
+                       BackgroundColor="#444547"
+                       WidthRequest="152"
+                       HeightRequest="60"
+                       Margin="4,0"
+                       Padding="0">
+                </Frame>
+            </customControls:CustomSlider.Thumb>
+
+            <customControls:CustomSlider.StateLabels>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="OFF"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand" />
+                    <Label Text="ON"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+            </customControls:CustomSlider.StateLabels>
+        </customControls:CustomSlider>
+    </StackLayout>
+</ContentPage>
